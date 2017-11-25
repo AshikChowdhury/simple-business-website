@@ -23,7 +23,38 @@
   <body>
 
     <!-- header -->
-    <header class="header">
+    <header class="header" id="home">
+
+      <!-- navigation -->
+      <nav class="navbar navbar-default navbar-fixed-top">
+        <div class="container">
+          <!-- Brand and toggle get grouped for better mobile display -->
+          <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#loso-navbar-collapse-1" aria-expanded="false">
+              <span class="sr-only">Toggle navigation</span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="#home">
+                <!-- small size logo -->
+                <img src="images/logo-small.png" alt="Logo">
+            </a>
+          </div>
+
+          <!-- Collect the nav links, forms, and other content for toggling -->
+          <div class="collapse navbar-collapse" id="loso-navbar-collapse-1">
+            <ul class="nav navbar-nav navbar-right">
+              <li><a href="#home" class="nav-item">HOME</a></li>
+              <li><a href="#about" class="nav-item">ABOUT</a></li>
+              <li><a href="#features" class="nav-item">FEATURES</a></li>
+              <li><a href="#screens" class="nav-item">SCREENS</a></li>
+              <li><a href="#download" class="nav-item">DOWNLOAD</a></li>
+              <li><a href="#contact" class="nav-item">CONTACT</a></li>
+            </ul>
+          </div><!-- /.navbar-collapse -->
+        </div><!-- /.container-fluid -->
+      </nav>
 
       <div class="header-overly">
         <div class="container">
@@ -64,7 +95,7 @@
     </header>
 
     <!-- About Us -->
-    <section>
+    <section id="about">
       <div class="container">
         <div class="row">
           <div class="col-md-10 col-md-offset-1">
@@ -197,7 +228,7 @@
     </section>
 
     <!-- Featchers -->
-    <section class="features">
+    <section class="features" id="features">
       <div class="container">
         <div class="row">
           <div class="col-md-10 col-md-offset-1">
@@ -312,7 +343,7 @@
     </section>
 
     <!-- screens     -->
-    <section class="screens">
+    <section class="screens" id="screens">
       <div class="container">
         <div class="row">
           <div class="col-md-10" col-md-offset-1>
@@ -345,7 +376,7 @@
     </section>
 
     <!-- Counters -->
-    <section class="counter">
+    <section class="counter" >
       <div class="counter-overly">
         <div class="container">
           <div class="row text-center">
@@ -383,7 +414,7 @@
     </section>
 
     <!-- download now -->
-    <section class="download-now">
+    <section class="download-now" id="download">
       <div class="container">
         <div class="row">
           <div class="col-md-10 col-md-offset-1">
@@ -411,8 +442,9 @@
         <div class="row">
           <div class="col-md-6">
             <div class="available-title">
-              <h2>Available</h2>
-              <p>Curabitur vitae dolor fermentum, egestas nulla eu, varius lacus.</p>
+              <h2>Available On</h2>
+              <p>Vestibulum congue eros ac neque dignissim, vel imperdiet neque consectetur. Maecenas condimentum cursus maximus.
+                Praesent eu diam efficitur,</p>
             </div>
           </div>
             <div class="col-md-6">
@@ -454,7 +486,7 @@
     </section>
 
     <!-- contact us -->
-    <section class="contact-us">
+    <section class="contact-us" id="contact">
       <div class="container">
         <div class="row">
           <div class="col-md-10 col-md-offset-1">
@@ -503,10 +535,28 @@
       </div>
     </section>
 
+    <!-- footer section -->
+    <footer class="footer">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-6">
+            <div id="copyright">
+              <p>Copyright &copy; 2017 <a href="#"> - LoSo </a></p>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="scroll-top">
+              <a href="#home" id="scroll-to-top"><i class="fa fa-angle-up"></i></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
     <!-- bootstrap Javascripy -->
     <script src="js/jquery-3.2.1.js"></script>
-    <script src="JS/bootstrap.min.js"></script>
-    <script src="JS/isInViewport.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/custom.js"></script>
+    <!-- <script src="js/isInViewport.min.js"></script> -->
 
     <script>
       // (function($){
