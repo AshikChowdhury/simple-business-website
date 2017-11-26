@@ -63,3 +63,85 @@ $(document).ready(function(){
       }
   });
 });
+ // Active maneu item on click
+ $(document).ready(function(){
+
+   'use strict';
+
+   $('.navbar-nav li a').click(function(){
+
+     'use strict';
+
+     $('.navbar-nav li a').parent().removeClass("active");
+
+     $(this).parent().addClass("active");
+
+   });
+ });
+
+// Highlight menu item on scroll
+$(document).ready(function(){
+
+  'use strict';
+
+  $(window).scroll(function(){
+
+    'use strict';
+
+    $("section").each(function(){
+
+      'use strict';
+
+      var bb = $(this).attr("id"); //about, copntact, download
+      var hei = $(this).outerHeight();
+      var grttop = $(this).offset().top - 70;
+
+      if ($(window).scrollTop() > grttop && $(window).scrollTop() < grttop + hei) {
+
+        $(".navbar-nav li a[href='#" + bb + "']").parent().addClass("active");
+
+      } else {
+        $(".navbar-nav li a[href='#" + bb + "']").parent().removeClass("active");
+      }
+
+    });
+
+  });
+
+});
+
+// Auto Padding to header
+
+$(document).ready(function(){
+
+  'use strict';
+
+  setInterval (function() {
+
+    'use strict';
+
+    var windowHeight = $(window).height();
+
+    var containerHeight = $(".header-container").height();
+
+    var padTop = windowHeight - containerHeight;
+
+    $(".header-container").css({
+
+      'padding-top': Math.round( padTop / 2 ) + 'px',
+      'padding-bottom': Math.round( padTop / 2 ) + 'px',
+
+    });
+  }, 10);
+});
+
+// add bx slider to screen
+$(document).ready(function(){
+  $('.bxslider').bxSlider({
+    slideWidth: 292.5,
+    auto: true,
+    minSlides: 1,
+    maxSlides: 3,
+    slideMargin: 50,
+  });
+});
