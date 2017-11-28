@@ -138,10 +138,27 @@ $(document).ready(function(){
 // add bx slider to screen
 $(document).ready(function(){
   $('.bxslider').bxSlider({
-    slideWidth: 292.5,
+    slideWidth: 355,
     auto: true,
     minSlides: 1,
     maxSlides: 3,
-    slideMargin: 50,
+    slideMargin: 50
   });
+});
+
+// add counterup
+
+$(document).ready(function(){
+  $('.counter-num').counterUp({
+      delay: 10,
+      time: 2000
+  });
+});
+
+//add animation/initialization wow
+$(document).ready(function(){
+
+  'use strict';
+  
+  new WOW().init();
 });
